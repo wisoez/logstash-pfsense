@@ -17,6 +17,8 @@ In Remote Logging Options, check "Enable Remote Logging", and add your remote Lo
 
 Finally, check the "Everything" checkbox for "Remote Syslog Contents".
 
+(Check port: sockstat -4 -l | grep -i 514)
+
 ## Logstash
 Edit conf.d/10-syslog.conf and change the host conditional on line 4 to be your pfSense IP address if it is not the default 192.168.1.1.
 
